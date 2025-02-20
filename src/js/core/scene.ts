@@ -2,7 +2,7 @@ import * as THREE from "three";
 import { cubeTextureLoader } from "../vars";
 
 const envMaps = (function () {
-  const path = "/ArstaBridge/";
+  const path = "./ArstaBridge/";
   const format = ".jpg";
   const urls = [
     path + "posx" + format,

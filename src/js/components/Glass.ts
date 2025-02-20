@@ -10,7 +10,7 @@ export const setGlass = (scene: THREE.Scene) => {
   let letters: THREE.Mesh;
   const clock = new THREE.Clock();
 
-  fontLoader.load("/archivo_black_regular.json", (font) => {
+  fontLoader.load("./archivo_black_regular.json", (font) => {
     const letterGeometry = new TextGeometry("GLASS", {
       font: font,
       size: 0.6,

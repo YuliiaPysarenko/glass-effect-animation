@@ -14,7 +14,7 @@ export const setTitle = (
 ): void => {
   if (!Array.isArray(text)) text = [text];
 
-  fontLoader.load("/bebas_neue_regular.json", (font) => {
+  fontLoader.load("./bebas_neue_regular.json", (font) => {
     const textMaterial = new THREE.MeshPhongMaterial({
       color: 0xffffff,
       flatShading: true,

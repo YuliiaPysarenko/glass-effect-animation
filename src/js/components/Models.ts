@@ -16,7 +16,7 @@ export const setModels = async (scene: THREE.Scene, camera: THREE.Camera) => {
 
   let meshes: THREE.Mesh[] = [];
 
-  gltfLoader.load("/glass_animation.glb", (glb) => {
+  gltfLoader.load("./glass_animation.glb", (glb) => {
     glb.scene.traverse((child) => {
       if (child instanceof THREE.Mesh) {
         child.material = glassMaterial;
